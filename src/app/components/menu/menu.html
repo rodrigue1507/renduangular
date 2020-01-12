@@ -1,0 +1,30 @@
+<nav >
+  <add-channel ></add-channel>
+  <!-- TODO itérer sur les channels -->
+    <div *ngFor="let item of channels" class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+      <a class="nav-link " data-toggle="pill" role="tab" aria-controls="v-pills-home" routerLinkActive="active" [routerLink]="item.id" >{{item.name}}</a>
+    </div>
+</nav>
+
+<style >
+  :host {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  add-channel {
+    border-bottom: 1px solid #eee;
+
+  }
+  .active{
+    font-weight: bolder;
+  }
+  a {
+    display: block;
+    padding: 8px 16px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+
+</style>

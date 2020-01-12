@@ -1,0 +1,21 @@
+/**
+ * Global style
+ */
+@import  "./node_modules/bootswatch/dist/lux/variables";
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/bootswatch/dist/lux/bootswatch"; 
+ body,
+html,
+app {
+  height: 100%;
+  width: 100%;
+  background: #e9ebee;
+}
+
+app {
+  display: block;
+  overflow: auto;
+  max-width: 980px;
+  margin: auto;
+  box-shadow: 0 0 3px #c3c3c3;
+}
